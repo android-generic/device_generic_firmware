@@ -4468,12 +4468,12 @@ Driver: qca - Qualcomm Atheros Bluetooth support for QCA2066 chips
 
 File: qca/hpbtfw21.tlv
 File: qca/hpnv21.bin
-File: qca/hpnv21g.bin
 File: qca/hpnv21.301
 File: qca/hpnv21.302
+File: qca/hpnv21.309
+File: qca/hpnv21g.bin
 File: qca/hpnv21g.301
 File: qca/hpnv21g.302
-File: qca/hpvn21.309
 File: qca/hpnv21g.309
 
 
