@@ -12,6 +12,7 @@ prune=no
 # shellcheck disable=SC2209
 compress=cat
 compext=
+skip_dedup=0
 
 while test $# -gt 0; do
     case $1 in
@@ -47,6 +48,19 @@ while test $# -gt 0; do
             shift
             ;;
 
+        --ignore-duplicates)
+            skip_dedup=1
+            shift
+            ;;
+
+        -*)
+            if test "$compress" = "cat"; then
+                echo "ERROR: unknown command-line option: $1"
+                exit 1
+            fi
+            compress="$compress $1"
+            shift
+            ;;
         *)
             if test "x$destdir" != "x"; then
                 echo "ERROR: unknown command-line options: $*"
@@ -59,18 +73,40 @@ while test $# -gt 0; do
     esac
 done
 
+if [ -z "$destdir" ]; then
+	echo "ERROR: destination directory was not specified"
+	exit 1
+fi
+
+if ! command -v rdfind >/dev/null; then
+	if [ "$skip_dedup" != 1 ]; then
+    		echo "ERROR: rdfind is not installed.  Pass --ignore-duplicates to skip deduplication"
+		exit 1
+	fi
+fi
+
 # shellcheck disable=SC2162 # file/folder name can include escaped symbols
-grep '^File:' WHENCE | sed -e 's/^File: *//g;s/"//g' | while read f; do
+grep -E '^(RawFile|File):' WHENCE | sed -E -e 's/^(RawFile|File): */\1 /;s/"//g' | while read k f; do
     test -f "$f" || continue
     install -d "$destdir/$(dirname "$f")"
     $verbose "copying/compressing file $f$compext"
-    if test "$compress" != "cat" && grep -q "^Raw: $f\$" WHENCE; then
+    if test "$compress" != "cat" && test "$k" = "RawFile"; then
         $verbose "compression will be skipped for file $f"
         cat "$f" > "$destdir/$f"
     else
         $compress "$f" > "$destdir/$f$compext"
     fi
 done
+
+if [ "$skip_dedup" != 1 ] ; then
+	$verbose "Finding duplicate files"
+	rdfind -makesymlinks true -makeresultsfile false "$destdir" >/dev/null
+	find "$destdir" -type l | while read -r l; do
+		target="$(realpath "$l")"
+		$verbose "Correcting path for $l"
+		ln -fs "$(realpath --relative-to="$(dirname "$(realpath -s "$l")")" "$target")" "$l"
+	done
+fi
 
 # shellcheck disable=SC2162 # file/folder name can include escaped symbols
 grep -E '^Link:' WHENCE | sed -e 's/^Link: *//g;s/-> //g' | while read f d; do
