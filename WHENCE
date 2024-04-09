@@ -824,7 +824,7 @@ File: iwlwifi-9000-pu-b0-jf-b0-38.ucode
 Version: 38.755cfdd8.0
 
 File: iwlwifi-9000-pu-b0-jf-b0-46.ucode
-Version: 46.ff18e32a.0
+Version: 46.7e3e4b69.0
 
 File: iwlwifi-9260-th-b0-jf-b0-34.ucode
 Version: 34.ba501b11.0
@@ -833,7 +833,7 @@ File: iwlwifi-9260-th-b0-jf-b0-38.ucode
 Version: 38.755cfdd8.0
 
 File: iwlwifi-9260-th-b0-jf-b0-46.ucode
-Version: 46.ff18e32a.0
+Version: 46.7e3e4b69.0
 
 File: iwlwifi-cc-a0-50.ucode
 Version: 50.3e391d3e.0
@@ -3841,13 +3841,13 @@ Version: BT_WindStormPeak_REL1299
 File: intel/ibt-12-16.sfi
 Version: BT_WindStormPeak_REL1299
 File: intel/ibt-17-16-1.sfi
-Version: BT_JeffersonPeak_B0_B0_REL20379
+Version: BT_JeffersonPeak_B0_B0_REL20397
 File: intel/ibt-17-16-1.ddc
-Version: BT_JeffersonPeak_B0_B0_REL20379
+Version: BT_JeffersonPeak_B0_B0_REL20397
 File: intel/ibt-17-2.sfi
-Version: BT_JeffersonPeak_B0_B0_REL20379
+Version: BT_JeffersonPeak_B0_B0_REL20397
 File: intel/ibt-17-2.ddc
-Version: BT_JeffersonPeak_B0_B0_REL20379
+Version: BT_JeffersonPeak_B0_B0_REL20397
 File: intel/ibt-17-0-1.sfi
 Version: BT_JeffersonPeak_A0_B0_REL0201
 File: intel/ibt-17-0-1.ddc
@@ -3857,13 +3857,13 @@ Version: BT_JeffersonPeak_A0_B0_REL0201
 File: intel/ibt-17-1.ddc
 Version: BT_JeffersonPeak_A0_B0_REL0201
 File: intel/ibt-18-16-1.sfi
-Version: BT_ThunderPeak_B0_B0_REL20379
+Version: BT_ThunderPeak_B0_B0_REL20397
 File: intel/ibt-18-16-1.ddc
-Version: BT_ThunderPeak_B0_B0_REL20379
+Version: BT_ThunderPeak_B0_B0_REL20397
 File: intel/ibt-18-2.sfi
-Version: BT_ThunderPeak_B0_B0_REL20379
+Version: BT_ThunderPeak_B0_B0_REL20397
 File: intel/ibt-18-2.ddc
-Version: BT_ThunderPeak_B0_B0_REL20379
+Version: BT_ThunderPeak_B0_B0_REL20397
 File: intel/ibt-18-0-1.sfi
 Version: BT_ThunderPeak_A0_B0_REL0201
 File: intel/ibt-18-0-1.ddc
@@ -3873,17 +3873,17 @@ Version: BT_ThunderPeak_A0_B0_REL0201
 File: intel/ibt-18-1.ddc
 Version: BT_ThunderPeak_A0_B0_REL0201
 File: intel/ibt-20-0-3.sfi
-Version: BT_CyclonePeak_A0_REL53497
+Version: BT_CyclonePeak_A0_REL53636
 File: intel/ibt-20-0-3.ddc
-Version: BT_CyclonePeak_A0_REL53497
+Version: BT_CyclonePeak_A0_REL53636
 File: intel/ibt-20-1-3.sfi
-Version: BT_CyclonePeak_A0_REL53497
+Version: BT_CyclonePeak_A0_REL53636
 File: intel/ibt-20-1-3.ddc
-Version: BT_CyclonePeak_A0_REL53497
+Version: BT_CyclonePeak_A0_REL53636
 File: intel/ibt-20-1-4.sfi
-Version: BT_CyclonePeak_A0_REL53497
+Version: BT_CyclonePeak_A0_REL53636
 File: intel/ibt-20-1-4.ddc
-Version: BT_CyclonePeak_A0_REL53497
+Version: BT_CyclonePeak_A0_REL53636
 File: intel/ibt-19-0-0.sfi
 Version: BT_Quasar_REL53497
 File: intel/ibt-19-0-0.ddc
@@ -3897,45 +3897,45 @@ Version: BT_Quasar_REL53263
 File: intel/ibt-19-0-3.ddc
 Version: BT_Quasar_REL53263
 File: intel/ibt-19-0-4.sfi
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-19-0-4.ddc
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-19-16-4.sfi
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-19-16-4.ddc
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-19-32-1.sfi
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-19-32-1.ddc
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-19-32-0.sfi
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-19-32-0.ddc
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-19-32-4.sfi
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-19-32-4.ddc
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-19-240-1.sfi
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-19-240-1.ddc
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-19-240-4.sfi
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-19-240-4.ddc
-Version: BT_HarrisonPeak_REL53497
+Version: BT_HarrisonPeak_REL53636
 File: intel/ibt-0041-0041.sfi
-Version: BT_TyphoonPeak_REL75234
+Version: BT_TyphoonPeak_REL79483
 File: intel/ibt-0041-0041.ddc
-Version: BT_TyphoonPeak_REL75234
+Version: BT_TyphoonPeak_REL79483
 File: intel/ibt-0040-0041.sfi
-Version: BT_Solar_GfP2_REL75234
+Version: BT_Solar_GfP2_REL79483
 File: intel/ibt-0040-0041.ddc
-Version: BT_Solar_GfP2_REL75234
+Version: BT_Solar_GfP2_REL79483
 File: intel/ibt-1040-0041.sfi
-Version: BT_SolarF_GfP2_REL75234
+Version: BT_SolarF_GfP2_REL79483
 File: intel/ibt-1040-0041.ddc
-Version: BT_SolarF_GfP2_REL75234
+Version: BT_SolarF_GfP2_REL79483
 
 File: intel/ibt-0040-1020.sfi
 Version: BT_Solar_JfP1_REL59564
@@ -3956,42 +3956,42 @@ File: intel/ibt-1040-2120.ddc
 Version: BT_SolarF_JfP2_REL59564
 
 File: intel/ibt-0040-1050.sfi
-Version: BT_Solar_HrP1_REL75234
+Version: BT_Solar_HrP1_REL79483
 File: intel/ibt-0040-1050.ddc
-Version: BT_Solar_HrP1_REL75234
+Version: BT_Solar_HrP1_REL79483
 File: intel/ibt-1040-1050.sfi
-Version: BT_SolarF_HrP1_REL73111
+Version: BT_SolarF_HrP1_REL79483
 File: intel/ibt-1040-1050.ddc
-Version: BT_SolarF_HrP1_REL73111
+Version: BT_SolarF_HrP1_REL79483
 
 File: intel/ibt-0040-4150.sfi
-Version: BT_Solar_JnP2_REL75234
+Version: BT_Solar_JnP2_REL79484
 File: intel/ibt-0040-4150.ddc
-Version: BT_Solar_JnP2_REL75234
+Version: BT_Solar_JnP2_REL79484
 File: intel/ibt-1040-4150.sfi
 Version: BT_SolarF_JnP2_REL75234
 File: intel/ibt-1040-4150.ddc
 Version: BT_SolarF_JnP2_REL75234
 
 File: intel/ibt-0291-0291.sfi
-Version: BT_GalePeak_REL45894
+Version: BT_GalePeak_REL53617
 File: intel/ibt-0291-0291.ddc
-Version: BT_GalePeak_REL45894
+Version: BT_GalePeak_REL53617
 
 File: intel/ibt-0180-0041.sfi
-Version: BT_Magnetar_GfP2_REL94759
+Version: BT_Magnetar_GfP2_REL100644
 File: intel/ibt-0180-0041.ddc
-Version: BT_Magnetar_GfP2_REL94759
+Version: BT_Magnetar_GfP2_REL100644
 
 File: intel/ibt-0180-4150.sfi
-Version: BT_Magnetar_JnP2_REL94759
+Version: BT_Magnetar_JnP2_REL100644
 File: intel/ibt-0180-4150.ddc
-Version: BT_Magnetar_JnP2_REL94759
+Version: BT_Magnetar_JnP2_REL100644
 
 File: intel/ibt-0180-1050.sfi
-Version: BT_Magnetar_HrP1_REL94759
+Version: BT_Magnetar_HrP1_REL100644
 File: intel/ibt-0180-1050.ddc
-Version: BT_Magnetar_HrP1_REL94759
+Version: BT_Magnetar_HrP1_REL100644
 
 Licence: Redistributable. See LICENCE.ibt_firmware for details
 
@@ -4924,7 +4924,7 @@ File: i915/dg2_guc_70.bin
 Version: GuC API/APB ver 70.20.0 for DG2
 
 File: i915/dg2_huc_gsc.bin
-Version: HuC API/APB ver 7.10.3 for DG2
+Version: HuC API/APB ver 7.10.15 for DG2
 
 File: i915/dg2_dmc_ver2_06.bin
 Version: DMC API/APB ver 2 release 6 for DG2
@@ -5660,9 +5660,9 @@ Licence: Redistributable. See LICENCE.mediatek for details.
 Driver: mt7921 - MediaTek MT7921 Wireless MACs
 
 File: mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin
-Version: 20231109190918a
+Version: 20240219110958a
 File: mediatek/WIFI_RAM_CODE_MT7961_1.bin
-Version: 20231109190959
+Version: 20240219111038
 
 Licence: Redistributable. See LICENCE.mediatek for details.
 
@@ -5671,7 +5671,7 @@ Licence: Redistributable. See LICENCE.mediatek for details.
 Driver: mt7921 - MediaTek MT7921 bluetooth chipset
 
 File: mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin
-Version: 20231109191416
+Version: 20240219111427
 
 Licence: Redistributable. See LICENCE.mediatek for details.
 
@@ -5680,9 +5680,9 @@ Licence: Redistributable. See LICENCE.mediatek for details.
 Driver: mt7922 - MediaTek MT7922 Wireless MACs
 
 File: mediatek/WIFI_MT7922_patch_mcu_1_1_hdr.bin
-Version: 20231120183400a
+Version: 20240219103244a
 File: mediatek/WIFI_RAM_CODE_MT7922_1.bin
-Version: 20231120183441
+Version: 20240219103337
 
 Licence: Redistributable. See LICENCE.mediatek for details.
 
@@ -5691,7 +5691,7 @@ Licence: Redistributable. See LICENCE.mediatek for details.
 Driver: mt7922 - MediaTek MT7922 bluetooth chipset
 
 File: mediatek/BT_RAM_CODE_MT7922_1_1_hdr.bin
-Version: 20231120183620
+Version: 20240219103618
 
 Licence: Redistributable. See LICENCE.mediatek for details.
 
@@ -7375,6 +7375,26 @@ Link: cirrus/cs35l41-dsp1-spk-prot-17aa231a-l0.bin -> cs35l41-dsp1-spk-prot-17aa
 Link: cirrus/cs35l41-dsp1-spk-prot-17aa231a-r0.bin -> cs35l41-dsp1-spk-prot-17aa22f2-r0.bin
 Link: cirrus/cs35l41-dsp1-spk-cali-17aa231a-l0.bin -> cs35l41-dsp1-spk-cali-17aa22f2-l0.bin
 Link: cirrus/cs35l41-dsp1-spk-cali-17aa231a-r0.bin -> cs35l41-dsp1-spk-cali-17aa22f2-r0.bin
+Link: cirrus/cs35l41-dsp1-spk-prot-17aa38a9.wmfw -> cs35l41/v6.61.1/halo_cspl_RAM_revB2_29.63.1.wmfw
+Link: cirrus/cs35l41-dsp1-spk-cali-17aa38a9.wmfw -> cs35l41/v6.61.1/halo_cspl_RAM_revB2_29.63.1.wmfw
+Link: cirrus/cs35l41-dsp1-spk-prot-17aa38ab.wmfw -> cs35l41/v6.61.1/halo_cspl_RAM_revB2_29.63.1.wmfw
+Link: cirrus/cs35l41-dsp1-spk-cali-17aa38ab.wmfw -> cs35l41/v6.61.1/halo_cspl_RAM_revB2_29.63.1.wmfw
+File: cirrus/cs35l41-dsp1-spk-prot-17aa38a9-spkid0-l0.bin
+File: cirrus/cs35l41-dsp1-spk-cali-17aa38a9-spkid0-l0.bin
+File: cirrus/cs35l41-dsp1-spk-prot-17aa38a9-spkid0-r0.bin
+File: cirrus/cs35l41-dsp1-spk-cali-17aa38a9-spkid0-r0.bin
+Link: cirrus/cs35l41-dsp1-spk-prot-17aa38a9-spkid1-l0.bin -> cs35l41-dsp1-spk-prot-17aa38a9-spkid0-l0.bin
+Link: cirrus/cs35l41-dsp1-spk-cali-17aa38a9-spkid1-l0.bin -> cs35l41-dsp1-spk-cali-17aa38a9-spkid0-l0.bin
+Link: cirrus/cs35l41-dsp1-spk-prot-17aa38a9-spkid1-r0.bin -> cs35l41-dsp1-spk-prot-17aa38a9-spkid0-r0.bin
+Link: cirrus/cs35l41-dsp1-spk-cali-17aa38a9-spkid1-r0.bin -> cs35l41-dsp1-spk-cali-17aa38a9-spkid0-r0.bin
+File: cirrus/cs35l41-dsp1-spk-prot-17aa38ab-spkid0-l0.bin
+File: cirrus/cs35l41-dsp1-spk-cali-17aa38ab-spkid0-l0.bin
+File: cirrus/cs35l41-dsp1-spk-prot-17aa38ab-spkid0-r0.bin
+File: cirrus/cs35l41-dsp1-spk-cali-17aa38ab-spkid0-r0.bin
+Link: cirrus/cs35l41-dsp1-spk-prot-17aa38ab-spkid1-l0.bin -> cs35l41-dsp1-spk-prot-17aa38ab-spkid0-l0.bin
+Link: cirrus/cs35l41-dsp1-spk-cali-17aa38ab-spkid1-l0.bin -> cs35l41-dsp1-spk-cali-17aa38ab-spkid0-l0.bin
+Link: cirrus/cs35l41-dsp1-spk-prot-17aa38ab-spkid1-r0.bin -> cs35l41-dsp1-spk-prot-17aa38ab-spkid0-r0.bin
+Link: cirrus/cs35l41-dsp1-spk-cali-17aa38ab-spkid1-r0.bin -> cs35l41-dsp1-spk-cali-17aa38ab-spkid0-r0.bin
 Link: cirrus/cs35l41-dsp1-spk-prot-103c8c26.wmfw -> cs35l41/v6.61.1/halo_cspl_RAM_revB2_29.63.1.wmfw
 Link: cirrus/cs35l41-dsp1-spk-cali-103c8c26.wmfw -> cs35l41/v6.61.1/halo_cspl_RAM_revB2_29.63.1.wmfw
 Link: cirrus/cs35l41-dsp1-spk-prot-103c8b42.wmfw -> cs35l41/v6.61.1/halo_cspl_RAM_revB2_29.63.1.wmfw
@@ -7534,6 +7554,50 @@ Copyright © 2022 Cirrus Logic, Inc. and Cirrus Logic International
 Semiconductor Ltd. All Rights Reserved.
 
 --------------------------------------------------------------------------
+
+Driver: cs35l56 - CS35L56 ALSA audio driver
+
+File: cirrus/cs35l56/CS35L56_Rev3.11.11.wmfw
+Link: cirrus/cs35l56-b0-dsp1-misc-10280c62-spkid0.wmfw -> cs35l56/CS35L56_Rev3.11.11.wmfw
+File: cirrus/cs35l56-b0-dsp1-misc-10280c62-spkid0-amp1.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c62-spkid0-amp2.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c62-spkid0-amp3.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c62-spkid0-amp4.bin
+Link: cirrus/cs35l56-b0-dsp1-misc-10280c62-spkid1.wmfw -> cs35l56/CS35L56_Rev3.11.11.wmfw
+File: cirrus/cs35l56-b0-dsp1-misc-10280c62-spkid1-amp1.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c62-spkid1-amp2.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c62-spkid1-amp3.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c62-spkid1-amp4.bin
+Link: cirrus/cs35l56-b0-dsp1-misc-10280c63-spkid0.wmfw -> cs35l56/CS35L56_Rev3.11.11.wmfw
+File: cirrus/cs35l56-b0-dsp1-misc-10280c63-spkid0-amp1.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c63-spkid0-amp2.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c63-spkid0-amp3.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c63-spkid0-amp4.bin
+Link: cirrus/cs35l56-b0-dsp1-misc-10280c63-spkid1.wmfw -> cs35l56/CS35L56_Rev3.11.11.wmfw
+File: cirrus/cs35l56-b0-dsp1-misc-10280c63-spkid1-amp1.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c63-spkid1-amp2.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c63-spkid1-amp3.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c63-spkid1-amp4.bin
+Link: cirrus/cs35l56-b0-dsp1-misc-10280c6b-spkid0.wmfw -> cs35l56/CS35L56_Rev3.11.11.wmfw
+File: cirrus/cs35l56-b0-dsp1-misc-10280c6b-spkid0-amp1.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c6b-spkid0-amp2.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c6b-spkid0-amp3.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c6b-spkid0-amp4.bin
+Link: cirrus/cs35l56-b0-dsp1-misc-10280c6b-spkid1.wmfw -> cs35l56/CS35L56_Rev3.11.11.wmfw
+File: cirrus/cs35l56-b0-dsp1-misc-10280c6b-spkid1-amp1.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c6b-spkid1-amp2.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c6b-spkid1-amp3.bin
+File: cirrus/cs35l56-b0-dsp1-misc-10280c6b-spkid1-amp4.bin
+
+License: Redistributable. See LICENSE.cirrus for details.
+
+Use of Cirrus Logic drivers, firmware and other materials is permitted
+only in connection with Cirrus Logic hardware products.
+
+Copyright © 2024 Cirrus Logic, Inc. and Cirrus Logic International
+Semiconductor Ltd. All Rights Reserved.
+
+---------------------------------------------------------------------------
 
 Driver: cs42l43 - CS42L43 ALSA audio driver
 
@@ -7739,7 +7803,7 @@ Found in hex form in kernel source.
 
 Driver: Mont-TSSE - Mont-TSSE(TM) Crypto Algorithm Accelerator Driver
 File: tsse_firmware.bin
-Version: 1.0.0
+Version: 1.0.1
 
 Licence: Redistributable. See LICENSE.montage for details
 
