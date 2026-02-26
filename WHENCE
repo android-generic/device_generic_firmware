@@ -8163,17 +8163,6 @@ Originates from https://git.linaro.org/people/srinivas.kandagatla/audioreach-top
 
 --------------------------------------------------------------------------
 
-Driver: cs35l41 - Cirrus Amp firmware and Jupiter tuning files
-
-File: cs35l41-dsp1-spk-cali.bin
-File: cs35l41-dsp1-spk-cali.wmfw
-File: cs35l41-dsp1-spk-prot.bin
-File: cs35l41-dsp1-spk-prot.wmfw
-
-Licence: Unknown, TBD
-
---------------------------------------------------------------------------
-
 Driver: amlogic - Amlogic SoC Firmware
 File: amlogic/aml_w155s2_bt_uart.bin
 Version: 42.23
