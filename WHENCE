@@ -4821,23 +4821,23 @@ File: qca/nvm_usb_00130200_0107.bin
 File: qca/nvm_usb_00130200_0109.bin
 File: qca/nvm_usb_00130200_0110.bin
 File: qca/rampatch_usb_00130201.bin
-Version: BTFW.HSP.2.1.0-00659-USB_UART_PATCHZ-1
+Version: BTFW.HSP.2.1.0-00665-USB_UART_PATCHZ-1
 File: qca/nvm_usb_00130201.bin
-Version: BTFW.HSP.2.1.0-00659-USB_UART_PATCHZ-1
+Version: BTFW.HSP.2.1.0-00665-USB_UART_PATCHZ-1
 File: qca/nvm_usb_00130201_010a.bin
-Version: BTFW.HSP.2.1.0-00659-USB_UART_PATCHZ-1
+Version: BTFW.HSP.2.1.0-00665-USB_UART_PATCHZ-1
 File: qca/nvm_usb_00130201_010b.bin
-Version: BTFW.HSP.2.1.0-00659-USB_UART_PATCHZ-1
+Version: BTFW.HSP.2.1.0-00665-USB_UART_PATCHZ-1
 File: qca/nvm_usb_00130201_0303.bin
-Version: BTFW.HSP.2.1.0-00659-USB_UART_PATCHZ-1
+Version: BTFW.HSP.2.1.0-00665-USB_UART_PATCHZ-1
 File: qca/nvm_usb_00130201_gf.bin
-Version: BTFW.HSP.2.1.0-00659-USB_UART_PATCHZ-1
+Version: BTFW.HSP.2.1.0-00665-USB_UART_PATCHZ-1
 File: qca/nvm_usb_00130201_gf_010a.bin
-Version: BTFW.HSP.2.1.0-00659-USB_UART_PATCHZ-1
+Version: BTFW.HSP.2.1.0-00665-USB_UART_PATCHZ-1
 File: qca/nvm_usb_00130201_gf_010b.bin
-Version: BTFW.HSP.2.1.0-00659-USB_UART_PATCHZ-1
+Version: BTFW.HSP.2.1.0-00665-USB_UART_PATCHZ-1
 File: qca/nvm_usb_00130201_gf_0303.bin
-Version: BTFW.HSP.2.1.0-00659-USB_UART_PATCHZ-1
+Version: BTFW.HSP.2.1.0-00665-USB_UART_PATCHZ-1
 File: qca/rampatch_usb_00190200.bin
 File: qca/QCA2066/rampatch_usb_00130201.bin
 Version: BTFW.HSP.2.1.0-00653-VER_PATCHZ-3
@@ -4936,15 +4936,15 @@ Licence: Redistributable. See LICENSE.QualcommAtheros_ath10k and qca/NOTICE.txt 
 Driver: qca - Qualcomm Atheros Bluetooth support for WCN6750 chips
 
 File: qca/msbtfw11.mbn
-Version: BTFW.MOSELLE.1.1.3-00105-MSL_PATCHZ-1
+Version: BTFW.MOSELLE.1.1.3-00106-MSL_PATCHZ-1
 File: qca/msbtfw11.tlv
-Version: BTFW.MOSELLE.1.1.3-00105-MSL_PATCHZ-1
+Version: BTFW.MOSELLE.1.1.3-00106-MSL_PATCHZ-1
 File: qca/msnv11.bin
-Version: BTFW.MOSELLE.1.1.3-00105-MSL_PATCHZ-1
+Version: BTFW.MOSELLE.1.1.3-00106-MSL_PATCHZ-1
 File: qca/msnv11.b0a
-Version: BTFW.MOSELLE.1.1.3-00105-MSL_PATCHZ-1
+Version: BTFW.MOSELLE.1.1.3-00106-MSL_PATCHZ-1
 File: qca/msnv11.b09
-Version: BTFW.MOSELLE.1.1.3-00105-MSL_PATCHZ-1
+Version: BTFW.MOSELLE.1.1.3-00106-MSL_PATCHZ-1
 
 Licence: Redistributable. See LICENSE.QualcommAtheros_ath10k and qca/NOTICE.txt for details
 
@@ -6989,14 +6989,14 @@ RawFile: qcom/sa8775p/gpdsp1r.jsn
 RawFile: qcom/sa8775p/gpdspr.jsn
 File: qcom/sm8750/adsp.mbn
 File: qcom/sm8750/adsp_dtb.mbn
-Version: LPAIDSP.HT.1.2.c1-00379-PAKALA-1
+Version: LPAIDSP.HT.1.2.c1-00450-PAKALA-2
 RawFile: qcom/sm8750/adspr.jsn
 RawFile: qcom/sm8750/adsps.jsn
 RawFile: qcom/sm8750/adspua.jsn
 RawFile: qcom/sm8750/adspuo.jsn
 File: qcom/sm8750/cdsp.mbn
 File: qcom/sm8750/cdsp_dtb.mbn
-Version: CDSP.HT.3.1-00883-PAKALA-1
+Version: CDSP.HT.3.1-00889-PAKALA-1
 RawFile: qcom/sm8750/cdspr.jsn
 File: qcom/x1e80100/adsp.mbn
 File: qcom/x1e80100/adsp_dtb.mbn
@@ -8956,14 +8956,24 @@ License: Redistributable. See LICENSE.powervr for details
 
 --------------------------------------------------------------------------
 
+Driver: qcom-kaanapali - Qualcomm ASoC tplg Firmware
+File: qcom/kaanapali/Kaanapali-MTP-tplg.bin
+Version: v1.0.2
+Info: DATE=28.02.2026
+
+Licence: Redistributable. See LICENCE.linaro for details
+Originates from https://github.com/linux-msm/audioreach-topology.git
+
+--------------------------------------------------------------------------
+
 Driver: qcom-qcs6490 - Qualcomm ASoC topology
 File: qcom/qcs6490/radxa/dragon-q6a/QCS6490-Radxa-Dragon-Q6A-tplg.bin
 Link: qcom/qcs6490/QCS6490-Radxa-Dragon-Q6A-tplg.bin -> radxa/dragon-q6a/QCS6490-Radxa-Dragon-Q6A-tplg.bin
 File: qcom/qcs6490/Thundercomm/RubikPi3/QCS6490-Thundercomm-RubikPi3-tplg.bin
 Link: qcom/qcs6490/QCS6490-Thundercomm-RubikPi3-tplg.bin -> Thundercomm/RubikPi3/QCS6490-Thundercomm-RubikPi3-tplg.bin
 File: qcom/qcs6490/QCS6490-RB3Gen2-tplg.bin
-Version: v1.0.1
-Info: DATE=10.01.2026
+Version: v1.0.2
+Info: DATE=28.02.2026
 
 Licence: Redistributable. See LICENCE.linaro for details
 Originates from https://github.com/linux-msm/audioreach-topology.git
@@ -8972,7 +8982,8 @@ Originates from https://github.com/linux-msm/audioreach-topology.git
 
 Driver: qcom-qcs8300 - Qualcomm ASoC topology
 File: qcom/qcs8300/MONACO-EVK-tplg.bin
-Version: v0.1.0
+Version: v1.0.2
+Info: DATE=28.02.2026
 
 Licence: Redistributable. See LICENCE.linaro for details
 Originates from https://github.com/linux-msm/audioreach-topology.git
@@ -8982,8 +8993,8 @@ Originates from https://github.com/linux-msm/audioreach-topology.git
 Driver: qcom-qcs9100 - Qualcomm ASoC topology
 File: qcom/sa8775p/LEMANS-EVK-tplg.bin
 Link: qcom/qcs9100/LEMANS-EVK-tplg.bin -> ../sa8775p/LEMANS-EVK-tplg.bin
-Version: v1.0.1
-Info: DATE=10.01.2026
+Version: v1.0.2
+Info: DATE=28.02.2026
 
 Licence: Redistributable. See LICENCE.linaro for details
 Originates from https://github.com/linux-msm/audioreach-topology.git
@@ -9515,8 +9526,8 @@ Licence: Redistributable. See LICENCE.r8a779g_pcie_phy for details.
 
 Driver: qcm6490 - Qualcomm ASoC tplg Firmware
 File: qcom/qcm6490/QCM6490-IDP-tplg.bin
-Version: v1.0.1
-Info: DATE=10.01.2026
+Version: v1.0.2
+Info: DATE=28.02.2026
 
 Licence: Redistributable. See LICENCE.linaro for details
 Originates from https://github.com/linux-msm/audioreach-topology.git
@@ -9524,8 +9535,8 @@ Originates from https://github.com/linux-msm/audioreach-topology.git
 
 Driver: qcs615 - Qualcomm ASoC tplg Firmware
 File: qcom/qcs615/TALOS-EVK-tplg.bin
-Version: v1.0.1
-Info: DATE=10.01.2026
+Version: v1.0.2
+Info: DATE=28.02.2026
 
 Licence: Redistributable. See LICENCE.linaro for details
 Originates from https://github.com/linux-msm/audioreach-topology.git
@@ -9533,8 +9544,8 @@ Originates from https://github.com/linux-msm/audioreach-topology.git
 
 Driver: sm8450 - Qualcomm ASoC tplg Firmware
 File: qcom/sm8450/SM8450-HDK-tplg.bin
-Version: v1.0.1
-Info: DATE=10.01.2026
+Version: v1.0.2
+Info: DATE=28.02.2026
 
 Licence: Redistributable. See LICENCE.linaro for details
 Originates from https://github.com/linux-msm/audioreach-topology.git
