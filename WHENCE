@@ -3178,8 +3178,6 @@ Link: brcm/brcmfmac43455-sdio.pine64,pinephone-pro.txt -> brcmfmac43455-sdio.AW-
 Link: brcm/brcmfmac43455-sdio.pine64,quartz64-a.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
 Link: brcm/brcmfmac43455-sdio.pine64,quartz64-b.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
 File: brcm/BCM4343A0.hcd
-File: brcm/brcmfmac43430-sdio.bin
-File: brcm/brcmfmac43430-sdio.txt
 File: brcm/brcmfmac43430a0-sdio.jumper-EZpad.txt
 File: brcm/brcmfmac43455-sdio.txt
 File: brcm/brcmfmac4356-pcie.txt
