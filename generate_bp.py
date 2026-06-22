@@ -150,21 +150,27 @@ def generate_bp():
             reqs = []
             
             for file in categorized_files[pkg]:
-                module_name = "fw_" + file.replace('/', '_') + "_zst"
+                is_raw = os.path.exists(os.path.join(vendor_fw_dir, file))
+                ext = '' if is_raw else '.zst'
+                
+                module_name = "fw_" + file.replace('/', '_') + ext.replace('.', '_')
                 module_name = re.sub(r'[^a-zA-Z0-9_-]', '_', module_name)
                 reqs.append(module_name)
                 
                 sub_dir = os.path.dirname(file)
                 f.write("prebuilt_firmware {\n")
                 f.write(f'    name: "{module_name}",\n')
-                f.write(f'    src: "{file}.zst",\n')
+                f.write(f'    src: "{file}{ext}",\n')
                 if sub_dir:
                     f.write(f'    sub_dir: "{sub_dir}",\n')
                 f.write('    vendor: true,\n')
                 f.write("}\n\n")
                 
             for link_name, link_target in categorized_links[pkg]:
-                module_name = "fw_link_" + link_name.replace('/', '_') + "_zst"
+                is_raw = os.path.exists(os.path.join(vendor_fw_dir, link_name))
+                ext = '' if is_raw else '.zst'
+                
+                module_name = "fw_link_" + link_name.replace('/', '_') + ext.replace('.', '_')
                 module_name = re.sub(r'[^a-zA-Z0-9_-]', '_', module_name)
                 reqs.append(module_name)
                 
@@ -175,8 +181,8 @@ def generate_bp():
                     else:
                         installed_path = f"$(TARGET_OUT_VENDOR)/firmware"
                         
-                    target_zst = f"{os.path.basename(link_target)}.zst"
-                    link_zst = f"{os.path.basename(link_name)}.zst"
+                    target_file = f"{os.path.basename(link_target)}{ext}"
+                    link_file = f"{os.path.basename(link_name)}{ext}"
                     
                     mk_content.append("include $(CLEAR_VARS)")
                     mk_content.append(f"LOCAL_MODULE := {module_name}")
@@ -186,13 +192,13 @@ def generate_bp():
                     mk_content.append(f"$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk")
                     mk_content.append(f"\t@echo \"Symlink: {module_name}\"")
                     mk_content.append(f"\tmkdir -p {installed_path}")
-                    mk_content.append(f"\tln -sf {target_zst} {installed_path}/{link_zst}")
+                    mk_content.append(f"\tln -sf {target_file} {installed_path}/{link_file}")
                     mk_content.append(f"\ttouch $@\n")
                 else:
                     f.write("install_symlink {\n")
                     f.write(f'    name: "{module_name}",\n')
-                    f.write(f'    installed_location: "firmware/{link_name}.zst",\n')
-                    f.write(f'    symlink_target: "{os.path.basename(link_target)}.zst",\n')
+                    f.write(f'    installed_location: "firmware/{link_name}{ext}",\n')
+                    f.write(f'    symlink_target: "{os.path.basename(link_target)}{ext}",\n')
                     f.write('    vendor: true,\n')
                     f.write("}\n\n")
                 
