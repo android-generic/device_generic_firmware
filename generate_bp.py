@@ -122,10 +122,13 @@ def generate_bp():
         for s in skipped:
             f.write(f"{s}\n")
             
-    # Parse args for legacy mode
     legacy_mode = '--legacy' in sys.argv
     if legacy_mode:
         print("Legacy mode enabled: Generating Android.mk for symlinks.")
+        
+    use_namespace = '--soong-namespace' in sys.argv
+    if use_namespace:
+        print("Soong namespace enabled.")
         
     # 6. Generate Android.bp and Android.mk files
     main_bp_path = os.path.join(vendor_fw_dir, 'Android.bp')
@@ -214,6 +217,8 @@ def generate_bp():
             
     with open(main_bp_path, 'w') as f:
         f.write("// Automatically generated. DO NOT EDIT.\n\n")
+        if use_namespace:
+            f.write("soong_namespace {\n}\n\n")
         f.write("build = [\n")
         for bp in sub_bps:
             f.write(f'    "{bp}",\n')
