@@ -161,6 +161,7 @@ def generate_bp():
                 f.write("prebuilt_firmware {\n")
                 f.write(f'    name: "{module_name}",\n')
                 f.write(f'    src: "{file}{ext}",\n')
+                f.write('    filename_from_src: true,\n')
                 if sub_dir:
                     f.write(f'    sub_dir: "{sub_dir}",\n')
                 f.write('    vendor: true,\n')
@@ -181,7 +182,7 @@ def generate_bp():
                     else:
                         installed_path = f"$(TARGET_OUT_VENDOR)/firmware"
                         
-                    target_file = f"{os.path.basename(link_target)}{ext}"
+                    target_file = f"{link_target}{ext}"
                     link_file = f"{os.path.basename(link_name)}{ext}"
                     
                     mk_content.append("include $(CLEAR_VARS)")
@@ -198,7 +199,7 @@ def generate_bp():
                     f.write("install_symlink {\n")
                     f.write(f'    name: "{module_name}",\n')
                     f.write(f'    installed_location: "firmware/{link_name}{ext}",\n')
-                    f.write(f'    symlink_target: "{os.path.basename(link_target)}{ext}",\n')
+                    f.write(f'    symlink_target: "{link_target}{ext}",\n')
                     f.write('    vendor: true,\n')
                     f.write("}\n\n")
                 
