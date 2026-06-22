@@ -122,10 +122,18 @@ def generate_bp():
         for s in skipped:
             f.write(f"{s}\n")
             
-    # 6. Generate Android.bp files
+    # Parse args for legacy mode
+    legacy_mode = '--legacy' in sys.argv
+    if legacy_mode:
+        print("Legacy mode enabled: Generating Android.mk for symlinks.")
+        
+    # 6. Generate Android.bp and Android.mk files
     main_bp_path = os.path.join(vendor_fw_dir, 'Android.bp')
+    mk_path = os.path.join(vendor_fw_dir, 'Android.mk')
     
     sub_bps = []
+    mk_content = ["LOCAL_PATH := $(call my-dir)\n"]
+    
     for pkg in list(packages.keys()) + ['other']:
         if not categorized_files[pkg] and not categorized_links[pkg]:
             continue
@@ -160,12 +168,33 @@ def generate_bp():
                 module_name = re.sub(r'[^a-zA-Z0-9_-]', '_', module_name)
                 reqs.append(module_name)
                 
-                f.write("install_symlink {\n")
-                f.write(f'    name: "{module_name}",\n')
-                f.write(f'    installed_location: "firmware/{link_name}.zst",\n')
-                f.write(f'    symlink_target: "{link_target}.zst",\n')
-                f.write('    vendor: true,\n')
-                f.write("}\n\n")
+                if legacy_mode:
+                    target_dir = os.path.dirname(link_name)
+                    if target_dir:
+                        installed_path = f"$(TARGET_OUT_VENDOR)/firmware/{target_dir}"
+                    else:
+                        installed_path = f"$(TARGET_OUT_VENDOR)/firmware"
+                        
+                    target_zst = f"{os.path.basename(link_target)}.zst"
+                    link_zst = f"{os.path.basename(link_name)}.zst"
+                    
+                    mk_content.append("include $(CLEAR_VARS)")
+                    mk_content.append(f"LOCAL_MODULE := {module_name}")
+                    mk_content.append("LOCAL_MODULE_CLASS := FAKE")
+                    mk_content.append("LOCAL_MODULE_TAGS := optional")
+                    mk_content.append("include $(BUILD_SYSTEM)/base_rules.mk")
+                    mk_content.append(f"$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk")
+                    mk_content.append(f"\t@echo \"Symlink: {module_name}\"")
+                    mk_content.append(f"\tmkdir -p {installed_path}")
+                    mk_content.append(f"\tln -sf {target_zst} {installed_path}/{link_zst}")
+                    mk_content.append(f"\ttouch $@\n")
+                else:
+                    f.write("install_symlink {\n")
+                    f.write(f'    name: "{module_name}",\n')
+                    f.write(f'    installed_location: "firmware/{link_name}.zst",\n')
+                    f.write(f'    symlink_target: "{os.path.basename(link_target)}.zst",\n')
+                    f.write('    vendor: true,\n')
+                    f.write("}\n\n")
                 
             f.write("phony {\n")
             f.write(f'    name: "{pkg_phony_name}",\n')
@@ -182,6 +211,12 @@ def generate_bp():
         for bp in sub_bps:
             f.write(f'    "{bp}",\n')
         f.write("]\n")
+        
+    if legacy_mode and len(mk_content) > 1:
+        with open(mk_path, 'w') as f:
+            f.write("\n".join(mk_content) + "\n")
+    elif not legacy_mode and os.path.exists(mk_path):
+        os.remove(mk_path)
         
     with open(version_file, 'w') as f:
         f.write(f"{commit_hash}\n")
