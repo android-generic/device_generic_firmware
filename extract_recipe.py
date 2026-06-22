@@ -36,6 +36,10 @@ def parse_pkgbuild(pkgbuild_path):
                         sub = sub.strip().strip("'").strip('"')
                         if sub:
                             packages[pkg_name].extend(expand_braces(sub))
+                            
+    for pkg in packages:
+        packages[pkg] = list(dict.fromkeys(packages[pkg]))
+        
     return packages
 
 def main():
