@@ -96,6 +96,10 @@ def main():
             "contrib/templates/rpm.spec",
             "copy-firmware.sh",
             "dedup-firmware.sh",
+            "extract_recipe.py",
+            "generate_bp.py",
+            "recipe.json",
+            "vendorsetup.sh",
         ]
     )
     known_prefixes = set(name for name in whence_list if name.endswith("/"))
@@ -109,6 +113,9 @@ def main():
             "contrib/process_linux_firmware.py",
             "copy-firmware.sh",
             "dedup-firmware.sh",
+            "extract_recipe.py",
+            "generate_bp.py",
+            "vendorsetup.sh",
         ]
     )
 
