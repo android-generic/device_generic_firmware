@@ -1,0 +1,87 @@
+{
+    "amd-ucode": [
+        "amd-ucode"
+    ],
+    "amdgpu": [
+        "amdgpu"
+    ],
+    "atheros": [
+        "ar[0-9]*",
+        "ath*",
+        "carl9170*",
+        "htc_*",
+        "qca",
+        "wil6210*"
+    ],
+    "broadcom": [
+        "bnx2*",
+        "brcm",
+        "cypress",
+        "tigon"
+    ],
+    "cirrus": [
+        "cirrus",
+        "cs42l43*"
+    ],
+    "intel": [
+        "e100",
+        "hfi1_*",
+        "i915",
+        "intel",
+        "isci",
+        "iwlwifi*",
+        "ixp4xx",
+        "qat_*",
+        "xe"
+    ],
+    "liquidio": [
+        "liquidio"
+    ],
+    "marvell": [
+        "libertas",
+        "mwl8k",
+        "mwlwifi",
+        "mrvl"
+    ],
+    "mediatek": [
+        "mediatek",
+        "mt7*",
+        "rt[237]*"
+    ],
+    "mellanox": [
+        "mellanox"
+    ],
+    "nfp": [
+        "netronome"
+    ],
+    "nvidia": [
+        "nvidia"
+    ],
+    "qcom": [
+        "qcom",
+        "a300_*"
+    ],
+    "qlogic": [
+        "qlogic",
+        "qed",
+        "ql2???_*",
+        "cbfw-*",
+        "qlogic",
+        "qed",
+        "ql2???_*",
+        "ctfw-*",
+        "qlogic",
+        "qed",
+        "ql2???_*",
+        "ct2fw-*"
+    ],
+    "radeon": [
+        "radeon"
+    ],
+    "realtek": [
+        "realtek",
+        "rtlwifi",
+        "rtw8*",
+        "rtl_*"
+    ]
+}
